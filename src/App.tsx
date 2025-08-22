@@ -1,9 +1,10 @@
+import Navbar from "./components/Shared/Navbar"
 
 function App() {
 
   return (
     <>
-      <h1>Well come </h1>
+      <Navbar />
     </>
   )
 }
