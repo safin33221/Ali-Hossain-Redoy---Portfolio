@@ -12,6 +12,7 @@ import {
     PopoverContent,
     PopoverTrigger,
 } from "@/components/ui/popover"
+import { ModeToggle } from "./mode-toggle"
 
 // Navigation links array to be used in both desktop and mobile menus
 const navigationLinks = [
@@ -48,6 +49,7 @@ export default function Component() {
                                     </NavigationMenuItem>
                                 ))}
                             </NavigationMenuList>
+                            <ModeToggle />
                         </NavigationMenu>
                     </div>
 

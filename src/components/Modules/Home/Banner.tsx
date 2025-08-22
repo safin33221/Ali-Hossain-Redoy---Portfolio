@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Banner() {
   return (
-    <section id="home" className="relative bg-white overflow-hidden">
+    <section id="home" className="relative  overflow-hidden">
       {/* Decorative gradient blob */}
       <div className="pointer-events-none absolute -top-32 -right-32 h-80 w-80 rounded-full bg-indigo-200 blur-3xl opacity-40" />
 
@@ -16,7 +16,7 @@ export default function Banner() {
             transition={{ duration: 0.6 }}
             className="max-w-2xl"
           >
-            <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
+            <h1 className="text-4xl font-extrabold tracking-tight  sm:text-5xl">
               Hi, I'm
               <span className="bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent"> Ali Hossain</span>
             </h1>
