@@ -15,15 +15,15 @@ import {
 
 // Navigation links array to be used in both desktop and mobile menus
 const navigationLinks = [
-    { href: "#", label: "Home", active: true },
+    { href: "#home", label: "Home", active: true },
     { href: "#about", label: "About" },
-    { href: "#", label: "Exprience" },
+    { href: "#companies", label: "Companies" },
     { href: "#", label: "Contact" },
 ]
 
 export default function Component() {
     return (
-        <header className="border-b px-4 md:px-6">
+        <header className="border-b px-4 md:px-6 bg-background max-w-[1420px] mx-auto">
             <div className="flex h-16 items-center justify-between gap-4">
                 {/* Left side */}
                 <div className="flex items-center justify-between w-full gap-2">

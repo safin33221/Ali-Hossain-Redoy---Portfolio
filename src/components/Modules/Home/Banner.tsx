@@ -3,12 +3,12 @@ import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Banner() {
   return (
-    <section className="relative bg-white overflow-hidden">
+    <section id="home" className="relative bg-white overflow-hidden">
       {/* Decorative gradient blob */}
       <div className="pointer-events-none absolute -top-32 -right-32 h-80 w-80 rounded-full bg-indigo-200 blur-3xl opacity-40" />
 
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-        <div className="grid items-center gap-10 lg:grid-cols-2">
+      <div className="mx-auto  px-4 py-16 sm:px-6 lg:px-32 lg:py-24">
+        <div className="flex items-center gap-30  flex-col-reverse md:flex-row justify-between ">
           {/* Left: Text */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}

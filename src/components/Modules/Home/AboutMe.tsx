@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 export default function AboutMe() {
     return (
         <section id="about" className="relative bg-gray-50 py-20 lg:py-28">
-            <div className="mx-auto   sm:px-6 lg:px-8">
-                <div className="grid items-center gap-12 lg:grid-cols-2">
+            <div className="mx-auto   px-4 py-16 sm:px-6 lg:px-32 lg:py-24  ">
+                <div className="grid items-center justify-between gap-20 md:gap-52 lg:grid-cols-2">
                     {/* Left: Image */}
                     <motion.div
                         initial={{ opacity: 0, x: -40 }}
