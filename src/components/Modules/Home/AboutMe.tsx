@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 export default function AboutMe() {
     return (
-        <section id="about" className="relative bg-gray-50 py-20 lg:py-28">
-            <div className="mx-auto   px-4 py-16 sm:px-6 lg:px-32 lg:py-24  ">
+        <section id="about" className="relative  py-10 lg:py-18">
+            <div className="mx-auto     ">
                 <div className="grid items-center justify-between gap-20 md:gap-52 lg:grid-cols-2">
                     {/* Left: Image */}
                     <motion.div
@@ -29,11 +29,11 @@ export default function AboutMe() {
                         transition={{ duration: 0.6, delay: 0.1 }}
                         className="max-w-2xl"
                     >
-                        <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                        <h2 className="text-3xl font-extrabold tracking-tight  sm:text-4xl">
                             About Me
                         </h2>
 
-                        <p className="mt-6 text-base text-gray-700 sm:text-lg leading-7">
+                        <p className="mt-6 text-base text-muted-foreground sm:text-lg leading-7">
                             I’m <span className="font-semibold text-indigo-600">Ali Hossain</span>,
                             a passionate web developer, entrepreneur, and mentor. Currently, I am the Founder & CEO of
                             <span className="font-semibold text-indigo-600"> Greate Bro IT Academy</span> and
@@ -41,12 +41,12 @@ export default function AboutMe() {
                             where I combine technology, creativity, and leadership to help students and businesses thrive in the digital world.
                         </p>
 
-                        <p className="mt-4 text-base text-gray-700 sm:text-lg leading-7">
+                        <p className="mt-4 text-base text-muted-foreground sm:text-lg leading-7">
                             My journey started with coding and design, and over the years, I’ve grown into a role where I not only build digital solutions
                             but also empower others to achieve their goals through education and innovative branding strategies.
                         </p>
 
-                        <p className="mt-4 text-base text-gray-700 sm:text-lg leading-7">
+                        <p className="mt-4 text-base text-muted-foreground sm:text-lg leading-7">
                             Outside of work, I enjoy sharing knowledge, mentoring upcoming developers, and contributing to the tech community.
                         </p>
 

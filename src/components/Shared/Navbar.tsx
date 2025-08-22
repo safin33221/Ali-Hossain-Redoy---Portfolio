@@ -16,16 +16,16 @@ import { ModeToggle } from "./mode-toggle"
 
 // Navigation links array to be used in both desktop and mobile menus
 const navigationLinks = [
-    { href: "#home", label: "Home", active: true },
+    { href: "#home", label: "Home"},
     { href: "#about", label: "About" },
     { href: "#companies", label: "Companies" },
-    { href: "#", label: "Contact" },
+    { href: "#contact", label: "Contact" },
 ]
 
 export default function Component() {
     return (
-        <header className="border-b px-4 md:px-6 bg-background max-w-[1420px] mx-auto">
-            <div className="flex h-16 items-center justify-between gap-4">
+        <header className="border-b px-4 md:px-6 border-2 bg-background max-w-[1420px] mx-auto">
+            <div className="flex h-16 items-center justify-between gap-4 container mx-auto">
                 {/* Left side */}
                 <div className="flex items-center justify-between w-full gap-2">
 
@@ -40,7 +40,7 @@ export default function Component() {
                                 {navigationLinks.map((link, index) => (
                                     <NavigationMenuItem key={index}>
                                         <NavigationMenuLink
-                                            active={link.active}
+                                            // active={link.active}
                                             href={link.href}
                                             className="text-muted-foreground hover:text-primary py-1.5 font-medium text-xl"
                                         >
@@ -49,7 +49,7 @@ export default function Component() {
                                     </NavigationMenuItem>
                                 ))}
                             </NavigationMenuList>
-                            <ModeToggle />
+                        <ModeToggle />
                         </NavigationMenu>
                     </div>
 
@@ -97,7 +97,7 @@ export default function Component() {
                                             <NavigationMenuLink
                                                 href={link.href}
                                                 className="py-1.5"
-                                                active={link.active}
+                                                // active={link.active}
                                             >
                                                 {link.label}
                                             </NavigationMenuLink>

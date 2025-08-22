@@ -21,7 +21,7 @@ export default function Banner() {
               <span className="bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent"> Ali Hossain</span>
             </h1>
 
-            <p className="mt-4 text-base text-gray-700 sm:text-lg leading-7">
+            <p className="mt-4 text-base text-muted-foreground sm:text-lg leading-7">
               I’m a frontend-focused web developer crafting clean, responsive, and accessible user interfaces.
               This is a demo banner section for a portfolio site with text on the left and an image on the right.
             </p>
@@ -34,7 +34,7 @@ export default function Banner() {
                 View Projects
               </a>
               <a
-                className="inline-flex items-center justify-center rounded-2xl border border-gray-200 px-5 py-3 text-sm font-semibold text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900"
+                className="inline-flex items-center justify-center rounded-2xl border border-gray-200 px-5 py-3 text-sm font-semibold text-muted-foreground shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900"
                 href="#contact"
               >
                 Contact Me
@@ -43,13 +43,13 @@ export default function Banner() {
 
             {/* Socials */}
             <div className="mt-6 flex items-center gap-4">
-              <a href="#" aria-label="GitHub" className="rounded-xl border border-gray-200 p-2 hover:bg-gray-50">
+              <a href="#" aria-label="GitHub" className="rounded-xl border border-gray-200 p-2 ">
                 <Github className="h-5 w-5" />
               </a>
-              <a href="#" aria-label="LinkedIn" className="rounded-xl border border-gray-200 p-2 hover:bg-gray-50">
+              <a href="#" aria-label="LinkedIn" className="rounded-xl border border-gray-200 p-2 ">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="mailto:hello@example.com" aria-label="Email" className="rounded-xl border border-gray-200 p-2 hover:bg-gray-50">
+              <a href="mailto:hello@example.com" aria-label="Email" className="rounded-xl border border-gray-200 p-2 ">
                 <Mail className="h-5 w-5" />
               </a>
             </div>
