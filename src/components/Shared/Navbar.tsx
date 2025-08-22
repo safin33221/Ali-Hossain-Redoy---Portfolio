@@ -17,7 +17,7 @@ import {
 const navigationLinks = [
     { href: "#", label: "Home", active: true },
     { href: "#", label: "About" },
-    { href: "#", label: "Exprienc" },
+    { href: "#", label: "Exprience" },
     { href: "#", label: "Contact" },
 ]
 
