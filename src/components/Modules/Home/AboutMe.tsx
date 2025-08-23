@@ -1,21 +1,23 @@
 
 import { motion } from "framer-motion";
-
+import Image from '../../../assets/images/AbouMeImgae.jpg';
 export default function AboutMe() {
     return (
         <section id="about" className="relative  py-10 lg:py-18">
-            <div className="mx-auto     ">
+            <div className="mx-auto  px-4 py-7 sm:px-6 lg:px-32 lg:py-14 ">
                 <div className="grid items-center justify-between gap-20 md:gap-52 lg:grid-cols-2">
                     {/* Left: Image */}
                     <motion.div
-                        initial={{ opacity: 0, x: -40 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.6 }}
+
+                        initial={{ opacity: 0, y: 40 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ amount: 0.3 }}
+                        transition={{ duration: 0.6, delay: 0.2 }}
                         className="relative"
                     >
-                        <div className="mx-auto w-full max-w-md overflow-hidden rounded-2xl shadow-lg ring-1 ring-gray-100">
+                        <div className="mx-auto w-full max-w-md overflow-hidden rounded-2xl shadow-lg light:ring-1 ring-gray-100">
                             <img
-                                src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=1600&auto=format&fit=crop"
+                                src={Image}
                                 alt="Ali Hossain portrait"
                                 className="h-[420px] w-full object-cover"
                             />
@@ -24,9 +26,10 @@ export default function AboutMe() {
 
                     {/* Right: Text */}
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 0.1 }}
+                        initial={{ opacity: 0, y: 40 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ amount: 0.3 }}
+                        transition={{ duration: 0.6, delay: 0.3 }}
                         className="max-w-2xl"
                     >
                         <h2 className="text-3xl font-extrabold tracking-tight  sm:text-4xl">

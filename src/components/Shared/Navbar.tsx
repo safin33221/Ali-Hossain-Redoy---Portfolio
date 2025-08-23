@@ -1,5 +1,5 @@
 
-import Logo from "@/assets/icons/Logo"
+import Logo from "../../assets/images/Logo.png"
 import { Button } from "@/components/ui/button"
 import {
     NavigationMenu,
@@ -12,11 +12,10 @@ import {
     PopoverContent,
     PopoverTrigger,
 } from "@/components/ui/popover"
-import { ModeToggle } from "./mode-toggle"
 
 // Navigation links array to be used in both desktop and mobile menus
 const navigationLinks = [
-    { href: "#home", label: "Home"},
+    { href: "#home", label: "Home" },
     { href: "#about", label: "About" },
     { href: "#companies", label: "Companies" },
     { href: "#contact", label: "Contact" },
@@ -24,7 +23,7 @@ const navigationLinks = [
 
 export default function Component() {
     return (
-        <header className="border-b px-4 md:px-6 border-2 bg-background max-w-[1420px] mx-auto">
+        <header className="border-b px-4 py-4 md:px-6 border-2 bg-background max-w-[1420px] mx-auto">
             <div className="flex h-16 items-center justify-between gap-4 container mx-auto">
                 {/* Left side */}
                 <div className="flex items-center justify-between w-full gap-2">
@@ -32,7 +31,7 @@ export default function Component() {
                     {/* Main nav */}
                     <div className="flex items-center justify-between w-full gap-6">
                         <a href="#" className="text-primary hover:text-primary/90">
-                            <Logo />
+                            <img className="w-24" src={Logo} alt="" />
                         </a>
                         {/* Navigation menu */}
                         <NavigationMenu className="max-md:hidden">
@@ -48,8 +47,9 @@ export default function Component() {
                                         </NavigationMenuLink>
                                     </NavigationMenuItem>
                                 ))}
+                                {/* <ModeToggle /> */}
+
                             </NavigationMenuList>
-                        <ModeToggle />
                         </NavigationMenu>
                     </div>
 
@@ -58,14 +58,14 @@ export default function Component() {
                     <Popover>
                         <PopoverTrigger asChild>
                             <Button
-                                className="group size-8 md:hidden"
+                                className="group size-8 md:hidden  "
                                 variant="ghost"
                                 size="icon"
                             >
                                 <svg
-                                    className="pointer-events-none"
-                                    width={16}
-                                    height={16}
+                                    className="pointer-events-none size-7"
+                                    width={24}
+                                    height={24}
                                     viewBox="0 0 24 24"
                                     fill="none"
                                     stroke="currentColor"
@@ -96,13 +96,16 @@ export default function Component() {
                                         <NavigationMenuItem key={index} className="w-full">
                                             <NavigationMenuLink
                                                 href={link.href}
-                                                className="py-1.5"
-                                                // active={link.active}
+                                                className="py-1.5 text-lg"
+                                            // active={link.active}
                                             >
                                                 {link.label}
                                             </NavigationMenuLink>
                                         </NavigationMenuItem>
                                     ))}
+                                    <div className=" mx-auto">
+                                        {/* <ModeToggle /> */}
+                                    </div>
                                 </NavigationMenuList>
                             </NavigationMenu>
                         </PopoverContent>

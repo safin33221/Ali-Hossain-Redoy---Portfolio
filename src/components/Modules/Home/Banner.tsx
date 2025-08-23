@@ -1,14 +1,15 @@
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail } from "lucide-react";
+import Profile from '../../../assets/images/Banner-Profile.png'
 
 export default function Banner() {
   return (
     <section id="home" className="relative  overflow-hidden">
       {/* Decorative gradient blob */}
-      <div className="pointer-events-none absolute -top-32 -right-32 h-80 w-80 rounded-full bg-indigo-200 blur-3xl opacity-40" />
+      {/* <div className="pointer-events-none absolute -top-32 -right-32 h-full w-40 rounded-full bg-indigo-300 blur-3xl opacity-40" /> */}
 
-      <div className="mx-auto  px-4 py-16 sm:px-6 lg:px-32 lg:py-24">
-        <div className="flex items-center gap-30  flex-col-reverse md:flex-row justify-between ">
+      <div className="mx-auto  px-4 py-7 sm:px-6 lg:px-32 lg:py-14">
+        <div className="flex items-center  md:gap-30   flex-col-reverse md:flex-row justify-between ">
           {/* Left: Text */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -16,15 +17,17 @@ export default function Banner() {
             transition={{ duration: 0.6 }}
             className="max-w-2xl"
           >
+
+
+            <p className="mt-4 text-base text-muted-foreground sm:text-xl leading-7">
+              Moving around a lot keeps the mind healthy and the elements of establishing oneself also combine to teach one to settle down.
+            </p>
+
             <h1 className="text-4xl font-extrabold tracking-tight  sm:text-5xl">
               Hi, I'm
-              <span className="bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent"> Ali Hossain</span>
+              <span className="bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">Ali Hossain</span>
             </h1>
-
-            <p className="mt-4 text-base text-muted-foreground sm:text-lg leading-7">
-              I’m a frontend-focused web developer crafting clean, responsive, and accessible user interfaces.
-              This is a demo banner section for a portfolio site with text on the left and an image on the right.
-            </p>
+            <h3 className="py-5 text-lg">Speaker <span className="text-muted-foreground">||</span> Entrepreneur  <span className="text-muted-foreground">||</span>  Journalist <span className="text-muted-foreground">||</span>  Traveler </h3>
 
             <div className="mt-6 flex flex-wrap items-center gap-4">
               <a
@@ -62,17 +65,21 @@ export default function Banner() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="relative"
           >
-            <div className="group relative mx-auto w-full max-w-md overflow-hidden rounded-2xl shadow-lg ring-1 ring-gray-100">
+            <div className="group relative mx-auto w-full max-w-2xl overflow-hidden rounded-2xl shadow-lg ">
               <img
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1600&auto=format&fit=crop"
+                src={Profile}
                 alt="Ali Hossain working at a laptop"
-                className="h-[380px] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                className=" h-[300px] md:h-[490px] mr-4 bg-cover w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent "  />
               <div className="absolute bottom-0 left-0 right-0 p-5">
-                <div className="rounded-xl bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 p-4 shadow">
-                  <p className="text-sm font-medium text-gray-900">Frontend Developer</p>
-                  <p className="text-xs text-gray-600">React • Tailwind CSS • Next.js</p>
+                <div className="rounded-xl bg-white/80 backdrop-blur  hidden md:block supports-[backdrop-filter]:bg-white/60 p-4 shadow">
+                  <p className="text-sm font-medium text-gray-900">Ali Hossian Ridoy</p>
+                  <p className="text-xs text-gray-600">
+                    <span className="text-muted-foreground">•</span> Entrepreneur
+                    <span className="text-muted-foreground">•</span>  Journalist
+                    <span className="text-muted-foreground">•</span>  Traveler
+                  </p>
                 </div>
               </div>
             </div>

@@ -4,16 +4,18 @@ import { Mail, Phone, MapPin } from "lucide-react";
 export default function Contact() {
     return (
         <section id="contact" className="relative bg-background py-10 lg:py-18">
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{  amount: 0.3 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="mx-auto  px-4 py-7 sm:px-6 lg:px-32 lg:py-14">
 
 
-                <div className="grid gap-10 lg:grid-cols-2 items-center">
+                <div className="grid gap-10 lg:gap-52 lg:grid-cols-2 items-center">
                     {/* Contact Info */}
                     <motion.div
-                        initial={{ opacity: 0, x: -40 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true, amount: 0.3 }}
-                        transition={{ duration: 0.6 }}
+
                         className="space-y-6 "
                     >
                         <div className="text-start mb-14">
@@ -24,7 +26,7 @@ export default function Contact() {
                                 Have a project idea, want to collaborate, or just want to say hello? Feel free to reach out!
                             </p>
                         </div>
-                        <div className="flex  gap-2 items-center justify-start">
+                        <div className="flex flex-col md:flex-row gap-2 md:items-center justify-start">
                             <div className="flex items-center gap-4">
                                 <Mail className="h-6 w-6 text-indigo-600" />
                                 <div>
@@ -53,13 +55,13 @@ export default function Contact() {
 
                     {/* Contact Form */}
                     <motion.form
-                        initial={{ opacity: 0, x: 40 }}
+
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true, amount: 0.3 }}
                         transition={{ duration: 0.6, delay: 0.1 }}
-                        className="rounded-2xl bg-card p-8 shadow-lg light:ring-1 light:ring-gray-100"
+                        className="rounded-2xl max-w-xl  bg-card p-8 shadow-lg light:ring-1 light:ring-gray-100"
                     >
-                        <div className="grid gap-6">
+                        <div className="grid  ">
                             <div>
                                 <label className="block text-sm font-medium ">Name</label>
                                 <input
@@ -88,15 +90,15 @@ export default function Contact() {
                             </div>
 
                             <button
-                                type="submit"
-                                className="inline-flex items-center justify-center rounded-xl bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-md transition-colors hover:bg-indigo-700"
+                               
+                                className="inline-flex items-center justify-center rounded-xl bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-md transition-colors hover:bg-indigo-700 mt-4"
                             >
                                 Send Message
                             </button>
                         </div>
                     </motion.form>
                 </div>
-            </div>
+            </motion.div>
         </section>
     );
 }
