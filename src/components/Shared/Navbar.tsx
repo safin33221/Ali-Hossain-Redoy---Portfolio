@@ -18,6 +18,7 @@ const navigationLinks = [
     { href: "#home", label: "Home" },
     { href: "#about", label: "About" },
     { href: "#companies", label: "Companies" },
+    { href: "#gallery", label: "Gallery" },
     { href: "#contact", label: "Contact" },
 ]
 

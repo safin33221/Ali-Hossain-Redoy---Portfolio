@@ -16,6 +16,7 @@
         "react": "18.3.1",
         "react-dom": "18.3.1",
         "react-headroom": "^3.2.1",
+        "react-photo-view": "^1.2.7",
         "tailwind-merge": "^3.3.1",
         "tailwindcss": "^4.1.12",
         "ts-node-dev": "^2.0.0",
@@ -760,6 +761,8 @@
     "react-headroom": ["react-headroom@3.2.1", "", { "dependencies": { "prop-types": "^15.5.8", "raf": "^3.3.0", "shallowequal": "^1.1.0" }, "peerDependencies": { "react": "^16.3.0 || ^17 || ^18" } }, "sha512-C+7bmTwmHWIOjU1r5aSLm4tAQKjmqW4PB65tHllE/D6h+If1+V3gy83BOvp46OCo25LtJJlLa/HDs7Eq5OPFgA=="],
 
     "react-is": ["react-is@16.13.1", "", {}, "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="],
+
+    "react-photo-view": ["react-photo-view@1.2.7", "", { "peerDependencies": { "react": ">=16.8.0", "react-dom": ">=16.8.0" } }, "sha512-MfOWVPxuibncRLaycZUNxqYU8D9IA+rbGDDaq6GM8RIoGJal592hEJoRAyRSI7ZxyyJNJTLMUWWL3UIXHJJOpw=="],
 
     "react-refresh": ["react-refresh@0.17.0", "", {}, "sha512-z6F7K9bV85EfseRCp2bzrpyQ0Gkw1uLoCel9XBVWPg/TjRj94SkJzUTGfOa4bs7iJvBWtQG0Wq7wnI0syw3EBQ=="],
 

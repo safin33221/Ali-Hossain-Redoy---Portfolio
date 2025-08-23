@@ -25,7 +25,7 @@ export default function Banner() {
 
             <h1 className="text-4xl font-extrabold tracking-tight  sm:text-5xl">
               Hi, I'm
-              <span className="bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">Ali Hossain</span>
+              <span className="bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent"> Ali Hossain</span>
             </h1>
             <h3 className="py-5 text-lg">Speaker <span className="text-muted-foreground">||</span> Entrepreneur  <span className="text-muted-foreground">||</span>  Journalist <span className="text-muted-foreground">||</span>  Traveler </h3>
 
