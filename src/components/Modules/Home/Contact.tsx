@@ -7,7 +7,7 @@ export default function Contact() {
             <motion.div
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{  amount: 0.3 }}
+                viewport={{ amount: 0.3 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="mx-auto  px-4 py-7 sm:px-6 lg:px-32 lg:py-14">
 
@@ -31,7 +31,7 @@ export default function Contact() {
                                 <Mail className="h-6 w-6 text-indigo-600" />
                                 <div>
                                     <p className="text-base font-semibold ">Email</p>
-                                    <p className="text-sm text-muted-foreground">hello@example.com</p>
+                                    <p className="text-sm text-muted-foreground">Infoalihossain@gmail.com</p>
                                 </div>
                             </div>
 
@@ -39,7 +39,7 @@ export default function Contact() {
                                 <Phone className="h-6 w-6 text-indigo-600" />
                                 <div>
                                     <p className="text-base font-semibold ">Phone</p>
-                                    <p className="text-sm text-muted-foreground">+880 1234-567890</p>
+                                    <p className="text-sm text-muted-foreground">+880 160136-2101</p>
                                 </div>
                             </div>
 
@@ -90,8 +90,9 @@ export default function Contact() {
                             </div>
 
                             <button
-                               
-                                className="inline-flex items-center justify-center rounded-xl bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-md transition-colors hover:bg-indigo-700 mt-4"
+
+                                className="inline-flex items-center justify-center rounded-xl 
+                                bg-gradient-to-r from-indigo-600 to-violet-600 px-6 py-3 text-sm font-semibold text-white shadow-md transition-colors hover:bg-indigo-700 mt-4"
                             >
                                 Send Message
                             </button>

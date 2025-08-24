@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-import Image from '../../../assets/images/AbouMeImgae.jpg';
+import Image from '../../../assets/images/AboutmeImage.jpg';
 export default function AboutMe() {
     return (
         <section id="about" className="relative  py-10 lg:py-18">
@@ -15,7 +15,7 @@ export default function AboutMe() {
                         transition={{ duration: 0.6, delay: 0.2 }}
                         className="relative"
                     >
-                        <div className="mx-auto w-full max-w-md overflow-hidden rounded-2xl shadow-lg light:ring-1 ring-gray-100">
+                        <div className="mx-auto w-full max-w-xl overflow-hidden rounded-2xl shadow-lg light:ring-1 ring-gray-100">
                             <img
                                 src={Image}
                                 alt="Ali Hossain portrait"
@@ -32,15 +32,16 @@ export default function AboutMe() {
                         transition={{ duration: 0.6, delay: 0.3 }}
                         className="max-w-2xl"
                     >
-                        <h2 className="text-3xl font-extrabold tracking-tight  sm:text-4xl">
+                        <h2 className="text-3xl font-extrabold text-center md:text-left tracking-tight  sm:text-4xl">
                             About Me
                         </h2>
 
                         <p className="mt-6 text-base text-muted-foreground sm:text-lg leading-7">
                             I’m <span className="font-semibold text-indigo-600">Ali Hossain</span>,
                             a passionate web developer, entrepreneur, and mentor. Currently, I am the Founder & CEO of
-                            <span className="font-semibold text-indigo-600"> Greate Bro IT Academy</span> and
-                            <span className="font-semibold text-indigo-600"> BrandMedia</span>,
+                            <span className="font-semibold text-indigo-600"> GreatBro It</span> ,
+                            <span className="font-semibold text-indigo-600"> GreatBro Academy</span> and
+                            <span className="font-semibold text-indigo-600"> BrandMedia360</span>,
                             where I combine technology, creativity, and leadership to help students and businesses thrive in the digital world.
                         </p>
 
@@ -56,7 +57,7 @@ export default function AboutMe() {
                         <div className="mt-6">
                             <a
                                 href="#contact"
-                                className="inline-flex items-center justify-center rounded-2xl bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-md transition-colors hover:bg-indigo-700"
+                                className="inline-flex items-center justify-center rounded-2xl bg-gradient-to-r from-indigo-600 to-violet-600 px-6 py-3 text-sm font-semibold text-white shadow-md transition-colors hover:bg-indigo-700"
                             >
                                 Let’s Connect
                             </a>

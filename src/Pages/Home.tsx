@@ -13,6 +13,7 @@ export default function Home() {
             <Brand />
             <CapturedInsights />
             <Contact />
+            
         </div>
     );
 };

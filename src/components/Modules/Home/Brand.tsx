@@ -1,28 +1,27 @@
 import { motion } from "framer-motion";
+import GreatBroAcademy from '../../../assets/images/Brands/GREATBRO-ACADEMY-LOGO-white.png';
+import GreatBroIt from '../../../assets/images/Brands/GB-it-2.png';
+import BM360 from '../../../assets/images/Brands/BM360.png';
 export default function Brand() {
     const ventures = [
         {
             name: "GreatBro It",
-            description:
-                "An academy dedicated to empowering learners with practical IT and web development skills, helping students build real-world projects and careers in tech.",
-            image:
-                "https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=1600&auto=format&fit=crop",
+            description: "GreatBro IT is a digital service agency dedicated to helping businesses and individuals grow in the online world. We specialize in graphic design, web development, and digital marketing, delivering creative and effective solutions that make brands stand out.",
+            image: GreatBroIt,
             link: "#",
         },
         {
             name: "GreatBro Academy",
             description:
                 "An academy dedicated to empowering learners with practical IT and web development skills, helping students build real-world projects and careers in tech.",
-            image:
-                "https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=1600&auto=format&fit=crop",
+            image: GreatBroAcademy,
             link: "#",
         },
         {
-            name: "BrandMedia36",
+            name: "BrandMedia360",
             description:
                 "A creative digital media and branding company focused on helping businesses stand out through innovative design, marketing, and storytelling.",
-            image:
-                "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1600&auto=format&fit=crop",
+            image: BM360,
             link: "#",
         },
     ];
@@ -55,7 +54,7 @@ export default function Brand() {
                             transition={{ duration: 0.6, delay: idx * 0.2 }}
                             className="group max-w-2xl mx-auto  relative overflow-hidden rounded-2xl shadow-lg light:ring-1 ring-gray-100 bg-card"
                         >
-                            <div className="h-56 w-full overflow-hidden">
+                            <div className="h-56 w-full overflow-hidden border border-accent ">
                                 <img
                                     src={venture.image}
                                     alt={venture.name}

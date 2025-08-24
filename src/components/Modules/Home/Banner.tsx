@@ -5,7 +5,7 @@ import Particles from "@/lib/Particles";
 
 export default function Banner() {
   return (
-    <section id="home" className="relative overflow-hidden min-h-screen">
+    <section id="home" className="relative overflow-hidden min-h-screen -z-10">
       {/* Particles Background */}
       <div className="absolute inset-0 w-full h-full -z-10">
         <Particles
@@ -27,6 +27,11 @@ export default function Banner() {
             transition={{ duration: 0.6 }}
             className="max-w-2xl text-center md:text-left"
           >
+
+
+            <p className="mt-4 text-base text-muted-foreground sm:text-xl leading-7">
+              Moving around a lot keeps the mind healthy and the elements of establishing oneself also combine to teach one to settle down.
+            </p>
             <h1 className="text-4xl font-extrabold sm:text-5xl">
               Hi, I'm{' '}
               <span className="bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">
@@ -34,17 +39,13 @@ export default function Banner() {
               </span>
             </h1>
 
-            <p className="mt-4 text-base text-muted-foreground sm:text-xl leading-7">
-              Moving around a lot keeps the mind healthy and the elements of establishing oneself also combine to teach one to settle down.
-            </p>
-
             <h3 className="py-5 text-lg">
               Speaker <span className="text-muted-foreground">||</span> Entrepreneur <span className="text-muted-foreground">||</span> Journalist <span className="text-muted-foreground">||</span> Traveler
             </h3>
 
             <div className="mt-6 flex flex-wrap items-center gap-4 justify-center md:justify-start">
               <a
-                className="inline-flex items-center justify-center rounded-2xl border border-indigo-600 bg-indigo-600 px-5 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-indigo-700"
+                className="inline-flex items-center justify-center rounded-2xl border border-indigo-600 bg-gradient-to-r from-indigo-600 to-violet-600 px-5 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-indigo-700"
                 href="#projects"
               >
                 View Projects
